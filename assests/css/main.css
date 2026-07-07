@@ -1,6 +1,6 @@
 body {
     background-color: lightgreen;
-    max-width: 75%;
+    max-width: 100%;
     /* width: 75%; */
     margin: 0 auto;
 }
@@ -11,5 +11,5 @@ body {
 } */
 
 #map {
-    height: 180px;
+    height: 300px;
 }
