@@ -26,17 +26,18 @@ var overlayMaps = {
 var layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
 
 
+
 // gps setup and activate
-// map.locate({setView: true, maxZoom: 16})
-// function onLocationFound(e) {
-//     var radius = e.accuracy;
+map.locate({setView: true, maxZoom: 16})
+function onLocationFound(e) {
+    var radius = e.accuracy;
 
-//     L.marker(e.latlng).addTo(map).bindPopup("Your within " + radius + " meters from here").openPopup();
-//     L.circle(e.latlng, radius).addTo(map);
-// }
-// function onLocationError(e) {
-//     alert(e.message);
-// }
+    L.marker(e.latlng).addTo(map).bindPopup("Your within " + radius + " meters from here").openPopup();
+    L.circle(e.latlng, radius).addTo(map);
+}
+function onLocationError(e) {
+    alert(e.message);
+}
 
-// map.on('locationfound', onLocationFound);
-// map.on('locationerror', onLocationError);
+map.on('locationfound', onLocationFound);
+map.on('locationerror', onLocationError);
