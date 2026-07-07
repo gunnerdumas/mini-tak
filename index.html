@@ -25,13 +25,15 @@
     
     
      <!--scripts-->
-    <script src="assests/js/mapping.js" defer></script>
     <script src="assests/js/pages.js" defer></script>
+    <script src="assests/js/mapping.js" defer></script>
     <script type="mpy" src="assests/py/main.py"></script>
 </head>
 <body>
-    <button class="tablink" onclick="openPage('create', this, 'red')">Create</button>
-    <button class="tablink" onclick="openPage('join', this, 'green')" id="defaultopen">Join</button> 
+    <div class="tablist">
+        <button class="tablink" onclick="openPage('create', this)" id="defaultopen">Create</button>
+        <button class="tablink" onclick="openPage('join', this)" >Join</button> 
+    </div>
 
     <div id="create" class="tabcontent">
         <h1>create menu</h1>

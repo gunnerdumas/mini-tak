@@ -1,7 +1,7 @@
-.tap {
-    overflow: hidden;
-    border: 2px solid #ccc;
-    background-color: gray;
+.tablist {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
 }
 .tablink {
     background-color: #555;
@@ -12,8 +12,8 @@
     cursor: pointer;
     padding: 10px 15px;
     font-size: 17px;
-    max-width: 100%;
-    width: 42%;
+    width: 50%;
+
 }
 .tablink:hover {
     background-color: #777;
