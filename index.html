@@ -7,7 +7,8 @@
     <title>My Webpage</title>
 
     <!--My style sheet-->
-    <link rel="stylesheet" href="assests/css/styles.css">
+    <link rel="stylesheet" href="assests/css/main.css">
+    <link rel="stylesheet" href="assests/css/pages.css">
 
     <!--Leaflet style sheets-->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -25,11 +26,21 @@
     
      <!--scripts-->
     <script src="assests/js/mapping.js" defer></script>
+    <script src="assests/js/pages.js" defer></script>
     <script type="mpy" src="assests/py/main.py"></script>
 </head>
 <body>
+    <button class="tablink" onclick="openPage('create', this, 'red')">Create</button>
+    <button class="tablink" onclick="openPage('join', this, 'green')" id="defaultopen">Join</button> 
 
-    <div id="map" class="main"></div>
+    <div id="create" class="tabcontent">
+        <h1>create menu</h1>
+        <div id="map" class="main"></div>
+    </div>
+    <div id="join" class="tabcontent">
+        <h1>join menu</h1>
+    </div>
+    
 
 </body>
 </html>

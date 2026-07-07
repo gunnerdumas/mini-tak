@@ -1,0 +1,31 @@
+.tap {
+    overflow: hidden;
+    border: 2px solid #ccc;
+    background-color: gray;
+}
+.tablink {
+    background-color: #555;
+    color: white;
+    float: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 17px;
+    max-width: 100%;
+    width: 42%;
+}
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+#create {background-color: red;}
+#join {background-color: green;}

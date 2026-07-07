@@ -4,6 +4,12 @@ body {
     width: 50%;
     margin: 0 auto;
 }
+/* body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+} */
+
 #map {
     height: 180px;
 }
